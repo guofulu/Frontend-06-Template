@@ -9,7 +9,7 @@ module.exports = {
     rules: [
       { test: /\.vue$/, use: "vue-loader" },
       { test: /\.css$/, use: ["style-loader", "vue-style-loader", "css-loader"] },
-      
+      { test: /\.js$/, use: { loader: "babel-loader", options: { presets: ["@babel/preset-env"]}}},
     ],
   },
   plugins: [
